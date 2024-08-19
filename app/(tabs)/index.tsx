@@ -1,14 +1,29 @@
 import React, { useState } from 'react';
-import { Image, StyleSheet, View, TouchableOpacity, Text } from 'react-native';
+import { Image, StyleSheet, View, TouchableOpacity, Text,ScrollView } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
 
 export default function HomeScreen() {
+  const imageUrls = [
+    'https://drive.google.com/uc?export=view&id=1_-kE57raG5bUFKIlc7mcLc7_SOPSAXlX',
+    'https://drive.google.com/uc?export=view&id=1OnoApGE0DGkwdN2YE1sCttH_2wC3wUI1',
+    'https://drive.google.com/uc?export=view&id=1kr1f53ab2BLeYjaXsC7U-UkjBhSbSKHI',
+    'https://drive.google.com/uc?export=view&id=1I908Q8Iftv14GVHA2l5do1ikhBRkilZC',
+    'https://drive.google.com/uc?export=view&id=1aLbe4BB9lJt1K9TDA8u_rxir9JnS3AB9'
+  ];
+  
+  const imageLinks = [
+    'https://example.com/link1',
+    'https://example.com/link2',
+    'https://example.com/link3',
+    'https://example.com/link4',
+    'https://example.com/link5'
+  ];
   const [selectedTab, setSelectedTab] = useState('Data');
 
   return (
     <View style={styles.gridContainer}>
 
-      <View style={styles.row}>
+      <View style={styles.row} id='navBar'>
         <ThemedText>
           07772899876
           {'\n'}
@@ -16,7 +31,13 @@ export default function HomeScreen() {
         </ThemedText>
       </View>
       
-      <View style={styles.row}>
+      <View style={styles.container}>
+      {/* Scrollable Row for Images */}
+      <ScrollView 
+        horizontal 
+        showsHorizontalScrollIndicator={false} 
+        style={styles.scrollView}
+      >
         <Image 
           source={{ uri: 'https://drive.google.com/uc?export=view&id=1_-kE57raG5bUFKIlc7mcLc7_SOPSAXlX'}} 
           style={styles.image} 
@@ -37,7 +58,8 @@ export default function HomeScreen() {
           source={{ uri: 'https://drive.google.com/uc?export=view&id=1aLbe4BB9lJt1K9TDA8u_rxir9JnS3AB9' }} 
           style={styles.image} 
         />
-      </View>
+      </ScrollView>
+    </View>
       
       <View style={styles.row}>
         <ThemedText>
@@ -81,22 +103,33 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  navBar: {
+    height: '10%', // Takes up 10% of the container height
+    backgroundColor: '#f0f0f0', // Optional: for better visualization
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 10,
+  },
+
   gridContainer: {
     flex: 1,
     flexDirection: 'column',
   },
   row: {
-    flex: 1,
+    flex: 1, // Ensures row takes remaining space
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
   },
+  scrollView: {
+    flex: 1,
+  },
   image: {
-    width: 300, // Adjust the width as needed
-    height: 180, // Adjust the height as needed
-    resizeMode: 'cover', // Adjust the image scaling mode
-    marginHorizontal: 5, // Add margin between images
+    width: 350, // Adjust the width as needed
+    height: 200, // Adjust the height as needed
+    marginRight: 10, // Space between images
+    resizeMode: 'cover',
   },
   tabContainer: {
     flexDirection: 'row',
@@ -118,5 +151,9 @@ const styles = StyleSheet.create({
   contentContainer: {
     padding: 20,
     alignItems: 'center',
+  },
+  container: {
+    flex: 1, // Ensures container takes full height
+    flexDirection: 'column',
   },
 });
