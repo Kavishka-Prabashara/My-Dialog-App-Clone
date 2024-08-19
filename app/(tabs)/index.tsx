@@ -4,6 +4,13 @@ import { ThemedText } from '@/components/ThemedText';
 export default function HomeScreen() {
   return (
     <View style={styles.gridContainer}>
+
+      <View style={styles.row}>
+        <ThemedText>
+          07772899876
+          Connected
+        </ThemedText>
+      </View>
       
       <View style={styles.row}>
         <Image 
@@ -62,8 +69,8 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   image: {
-    width: 100, // Adjust the width as needed
-    height: 100, // Adjust the height as needed
+    width: 300, // Adjust the width as needed
+    height: 200, // Adjust the height as needed
     resizeMode: 'cover', // Adjust the image scaling mode
   },
 });
