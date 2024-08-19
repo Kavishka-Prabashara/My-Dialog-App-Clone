@@ -1,13 +1,17 @@
-import { Image, StyleSheet, View } from 'react-native';
+import React, { useState } from 'react';
+import { Image, StyleSheet, View, TouchableOpacity, Text } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
 
 export default function HomeScreen() {
+  const [selectedTab, setSelectedTab] = useState('Data');
+
   return (
     <View style={styles.gridContainer}>
 
       <View style={styles.row}>
         <ThemedText>
           07772899876
+          {'\n'}
           Connected
         </ThemedText>
       </View>
@@ -41,17 +45,37 @@ export default function HomeScreen() {
         </ThemedText>
       </View>
 
-      {/* Row 2: Data Row */}
-      <View style={styles.row}>
-        <ThemedText>Data: 12345</ThemedText>
+      {/* Tab Header */}
+      <View style={styles.tabContainer}>
+        {['Money', 'Data', 'Voice', 'SMS'].map((tab) => (
+          <TouchableOpacity 
+            key={tab} 
+            style={[
+              styles.tab, 
+              selectedTab === tab && styles.activeTab
+            ]}
+            onPress={() => setSelectedTab(tab)}
+          >
+            <Text style={styles.tabText}>{tab}</Text>
+          </TouchableOpacity>
+        ))}
       </View>
-
-      {/* Row 3: Currency Row */}
-      <View style={styles.row}>
-        <ThemedText>Currency: USD</ThemedText>
+      
+      {/* Tab Content */}
+      <View style={styles.contentContainer}>
+        {selectedTab === 'Money' && (
+          <ThemedText>Money: $100</ThemedText>
+        )}
+        {selectedTab === 'Data' && (
+          <ThemedText>Data: 12345</ThemedText>
+        )}
+        {selectedTab === 'Voice' && (
+          <ThemedText>Voice: 300 minutes</ThemedText>
+        )}
+        {selectedTab === 'SMS' && (
+          <ThemedText>SMS: 50 messages</ThemedText>
+        )}
       </View>
-
-      {/* Add more rows here as needed */}
     </View>
   );
 }
@@ -70,7 +94,29 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 300, // Adjust the width as needed
-    height: 200, // Adjust the height as needed
+    height: 180, // Adjust the height as needed
     resizeMode: 'cover', // Adjust the image scaling mode
+    marginHorizontal: 5, // Add margin between images
+  },
+  tabContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    paddingVertical: 10,
+    backgroundColor: '#ddd',
+  },
+  tab: {
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+  },
+  activeTab: {
+    borderBottomWidth: 2,
+    borderBottomColor: '#007AFF', // Active tab indicator color
+  },
+  tabText: {
+    fontSize: 16,
+  },
+  contentContainer: {
+    padding: 20,
+    alignItems: 'center',
   },
 });
