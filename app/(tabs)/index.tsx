@@ -194,7 +194,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    height: 50,
+    height: 60,
+    borderRadius: 16,
     backgroundColor: '#f8f8f8',
     justifyContent: 'center',
     alignItems: 'flex-start',
