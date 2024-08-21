@@ -104,10 +104,12 @@ export default function HomeScreen() {
       {/* Tab Content */}
       <View style={styles.contentContainer}>
         {selectedTab === 'MONEY' && (
+          <View style={styles.moneyArea}>
            <View style={styles.tabInformationArea}>
            <Text style={styles.tabInfoTextsimCategory}>Prepaid Balance</Text>
            <Text style={styles.tabInfoText}>RS 100</Text>
            <Text style={styles.tabInfoTextvalidDate}>Valid Until 30 Mar 2025</Text>
+         </View>
          </View>
         )}
         {selectedTab === 'DATA' && (
@@ -348,6 +350,7 @@ row: {
     borderRadius: 10, // Rounded corners
     justifyContent: 'center', // Center content vertically
     alignItems: 'center', // Center content horizontally
+    
   },
   tabInfoText: {
     color: '#ffffff', // Text color
@@ -356,9 +359,11 @@ row: {
   },
   tabInfoTextsimCategory :{
     color: '#ffffff', // Text color
+    fontSize: 16, // Font size
   },
   tabInfoTextvalidDate :{
     color: '#ffffff', // Text color
+    fontSize: 16, // Font size
   },
 });
 
