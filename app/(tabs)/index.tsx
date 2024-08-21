@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image, StyleSheet, View, TouchableOpacity, Text,ScrollView,SafeAreaView,StatusBar } from 'react-native';
+import { Image, StyleSheet, View, TouchableOpacity, Text,ScrollView,SafeAreaView,StatusBar,Button } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
 
 
@@ -110,7 +110,15 @@ export default function HomeScreen() {
            <Text style={styles.tabInfoText}>RS 100</Text>
            <Text style={styles.tabInfoTextvalidDate}>Valid Until 30 Mar 2025</Text>
          </View>
+         <View style={styles.btnArea}>
+         <TouchableOpacity style={styles.transactionButton}>
+          <Text style={styles.transactionButtonText}>TRANSACTION</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.reloadButton}>
+          <Text style={styles.reloadButtonText}>RELOAD</Text>
+        </TouchableOpacity>
          </View>
+      </View>
         )}
         {selectedTab === 'DATA' && (
            <View style={styles.tabInformationArea}>
@@ -374,5 +382,39 @@ row: {
     fontSize: 16, // Font size
     textAlign: 'left', // Ensure text is aligned to the left
   },
+  btnArea: {
+    flexDirection: 'row', // Align buttons side by side
+    justifyContent: 'space-between', // Add space between the buttons
+    marginTop: 10, // Optional: Add space above the button area
+  },
+  
+  transactionButton: {
+    borderRadius: 30, // Rounded corners
+    borderWidth: 1, // Border thickness
+    borderColor: '#808080', // Grey outline color
+    backgroundColor: '#ffffff', // White background
+    paddingVertical: 10, // Vertical padding for button
+    paddingHorizontal: 15, // Horizontal padding for button
+  },
+  
+  reloadButton: {
+    borderRadius: 30, // Rounded corners
+    backgroundColor: '#ff0000', // Red background
+    paddingVertical: 10, // Vertical padding for button
+    paddingHorizontal: 15, // Horizontal padding for button
+  },
+  
+  transactionButtonText: {
+    color: '#ff0000', // Red font color
+    fontWeight: 'bold', // Bold text
+    textAlign: 'center', // Center text within the button
+  },
+  
+  reloadButtonText: {
+    color: '#ffffff', // White font color
+    fontWeight: 'bold', // Bold text
+    textAlign: 'center', // Center text within the button
+  },
+  
 });
 
