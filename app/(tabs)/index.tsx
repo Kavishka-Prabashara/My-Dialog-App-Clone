@@ -242,7 +242,7 @@ const styles = StyleSheet.create({
   },
 row: {
     backgroundColor: '#ffffff', // Light gray background
-    borderRadius: 10, // Rounded corners
+    borderRadius: 16, // Rounded corners
     height: 60, // Set the height
     width: '100%', // Set the width, adjust as needed
     padding: 10, // Optional padding for text spacing
@@ -280,6 +280,7 @@ row: {
   contentContainer: {
     padding: 20,
     alignItems: 'center',
+    fontSize: 20
   },
   container: {
     flex: 1, // Ensures container takes full height
