@@ -81,7 +81,7 @@ export default function HomeScreen() {
 
       {/* Tab Header */}
       <View style={styles.tabContainer}>
-        {['Money', 'Data', 'Voice', 'SMS'].map((tab) => (
+        {['MONEY', 'DATA', 'VOICE', 'SMS'].map((tab) => (
           <TouchableOpacity 
             key={tab} 
             style={[
