@@ -79,6 +79,7 @@ export default function HomeScreen() {
         </ThemedText>
       </View>
 
+      <View style={styles.tabArea}>
       {/* Tab Header */}
       <View style={styles.tabContainer}>
         {['MONEY', 'DATA', 'VOICE', 'SMS'].map((tab) => (
@@ -90,20 +91,25 @@ export default function HomeScreen() {
             ]}
             onPress={() => setSelectedTab(tab)}
           >
-            <Text style={styles.tabText}>{tab}</Text>
+            <Text style={[
+              styles.tabText, 
+              selectedTab === tab && styles.activeTabText
+            ]}>
+              {tab}
+            </Text>
           </TouchableOpacity>
         ))}
       </View>
       
       {/* Tab Content */}
       <View style={styles.contentContainer}>
-        {selectedTab === 'Money' && (
+        {selectedTab === 'MONEY' && (
           <ThemedText>Money: $100</ThemedText>
         )}
-        {selectedTab === 'Data' && (
+        {selectedTab === 'DATA' && (
           <ThemedText>Data: 12345</ThemedText>
         )}
-        {selectedTab === 'Voice' && (
+        {selectedTab === 'VOICE' && (
           <ThemedText>Voice: 300 minutes</ThemedText>
         )}
         {selectedTab === 'SMS' && (
@@ -179,6 +185,7 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  tabArea:{},
   containerMain: {
     flex: 1,
   },
@@ -310,10 +317,15 @@ row: {
     backgroundColor: '#ffffff', // Background color for the active tab
     borderBottomWidth: 3, // Underline thickness
     borderBottomColor: '#890166', // Underline color
+    color: '#890166', // Default text color
+  },
+  activeTabText: {
+    color: '#890166', // Green text color for the active tab
   },
   tabText: {
-    color: '#890166', // Default text color
+    color: '#808080', // Default text color
     fontSize: 16,
     fontWeight: 'bold',
   },
 });
+
