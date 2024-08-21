@@ -115,6 +115,7 @@ export default function HomeScreen() {
         {selectedTab === 'SMS' && (
           <ThemedText>SMS: 50 messages</ThemedText>
         )}
+        </View>
       </View>
       <View style={styles.row} id='navBar'>
         <ThemedText>
@@ -185,7 +186,10 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  tabArea:{},
+  tabArea:{
+    backgroundColor:'#ffffff',
+    borderRadius :20
+  },
   containerMain: {
     flex: 1,
   },
