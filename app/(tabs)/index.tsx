@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { Image, StyleSheet, View, TouchableOpacity, Text,ScrollView } from 'react-native';
+import { Image, StyleSheet, View, TouchableOpacity, Text,ScrollView,SafeAreaView,StatusBar } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
+
+
+StatusBar.setBarStyle('dark-content', true);
 
 export default function HomeScreen() {
   const imageUrls = [
@@ -21,15 +24,19 @@ export default function HomeScreen() {
   const [selectedTab, setSelectedTab] = useState('Data');
 
   return (
-    <View style={styles.gridContainer}>
-
-      <View style={styles.row} id='navBar'>
-        <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
-        </ThemedText>
+    
+    <SafeAreaView style={styles.containerMain}>
+        <View style={styles.header}>
+          <Image source={require('@/assets/images/callIcon.png')
+            
+          }
+          style={{width: 50, height: 50}} />
+        <Text style={styles.headerText}>0777******</Text>
+        <Text style={styles.headerText}>Connected</Text>
       </View>
+      <ScrollView style={styles.scrollViewMain}>
+
+
       
       <View style={styles.container}>
       {/* Scrollable Row for Images */}
@@ -98,12 +105,92 @@ export default function HomeScreen() {
           <ThemedText>SMS: 50 messages</ThemedText>
         )}
       </View>
-    </View>
+      <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+      <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+      <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+      <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+            <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+      <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+      <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+      <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+            <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+    </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  navBar: {
+  header: {
+    height: 50,
+    backgroundColor: '#f8f8f8',
+    justifyContent: 'center',
+    alignItems: 'left',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd',
+  },
+  headerText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  scrollViewMain: {
+    backgroundColor: 'pink',
+    marginHorizontal: 0,
+  },
+  statusBar: {
     height: '10%', // Takes up 10% of the container height
     backgroundColor: '#f0f0f0', // Optional: for better visualization
     justifyContent: 'center',
@@ -155,5 +242,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, // Ensures container takes full height
     flexDirection: 'column',
+  },
+  containerMain: {
+    flex: 1,
+    paddingTop: StatusBar.currentHeight,
   },
 });

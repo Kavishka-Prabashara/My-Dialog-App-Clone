@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4814165a-4dde-4cf8-b3d1-8438e037d4dc" name="Changes" comment="Added tab pane">
+    <list default="true" id="4814165a-4dde-4cf8-b3d1-8438e037d4dc" name="Changes" comment="Images container fix add scroll for images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
     </list>
@@ -65,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724055835292</updated>
-      <workItem from="1724055838318" duration="1363000" />
+      <workItem from="1724055838318" duration="2694000" />
     </task>
     <task id="LOCAL-00001" summary="Added tab pane">
       <option name="closed" value="true" />
@@ -75,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724056484217</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Images container fix add scroll for images">
+      <option name="closed" value="true" />
+      <created>1724057900087</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724057900087</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added tab pane" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tab pane" />
+    <MESSAGE value="Images container fix add scroll for images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Images container fix add scroll for images" />
   </component>
 </project>
