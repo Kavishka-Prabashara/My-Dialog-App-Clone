@@ -27,14 +27,17 @@ export default function HomeScreen() {
     
     <SafeAreaView style={styles.containerMain}>
         <View style={styles.header}>
-    <View style={styles.headerContent}>
-      <Image 
-        source={require('@/assets/images/callIcon.png')} 
-        style={{ width: 50, height: 40 }} 
-        testID="callIconImage" // Replace `id` with `testID`
-      />
-      <Text style={styles.mobileNumber}>+1234567890</Text>
+        <View style={styles.headerContent}>
+    <Image 
+      source={require('@/assets/images/callIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="callIconImage"
+    />
+    <View style={styles.textContainer}>
+      <Text style={styles.mobileNumber}>0777******</Text>
+      <Text style={styles.status}>    Connected</Text>
     </View>
+  </View>
   </View>
       <ScrollView style={styles.scrollViewMain}>
 
@@ -191,9 +194,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row', // Places the items in a row
     alignItems: 'center', // Vertically centers the items
   },
+  textContainer: {
+    flexDirection: 'column', // Arranges the two texts in a column
+    marginLeft: 10, // Space between the icon and the text
+  },
   mobileNumber: {
-    fontSize: 16,
+    fontSize: 20,
     marginLeft: 10, // Adds space between the icon and the text
+    
   },
   scrollViewMain: {
     flex: 1,
@@ -210,7 +218,10 @@ const styles = StyleSheet.create({
     ],
   },
 
-
+  status: {
+    fontSize: 14,
+    color: 'green', // Optional: adds color to the "Connected" text
+  },
 
 
   scrollViewMain: {
