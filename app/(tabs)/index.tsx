@@ -348,11 +348,12 @@ row: {
     width: '100%', // Set width to be the same as its parent container's width
     backgroundColor: '#890166', // Background color
     borderRadius: 16, // Rounded corners
-    justifyContent: 'flex-start', // Align content to the top
+    justifyContent: 'center', // Center content vertically
     alignItems: 'flex-start', // Align content to the left
     paddingLeft: 10, // Padding to add space from the left edge
     paddingRight: 10, // Optional padding to ensure space on the right side
   },
+  
   tabInformationArea: {
     width: '100%', // Ensures the inner area takes full width
   },
