@@ -309,10 +309,10 @@ row: {
   activeTab: {
     backgroundColor: '#ffffff', // Background color for the active tab
     borderBottomWidth: 3, // Underline thickness
-    borderBottomColor: '#8A2BE2', // Underline color
+    borderBottomColor: '#890166', // Underline color
   },
   tabText: {
-    color: '#8A2BE2', // Default text color
+    color: '#890166', // Default text color
     fontSize: 16,
     fontWeight: 'bold',
   },
