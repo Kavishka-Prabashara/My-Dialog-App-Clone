@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
   mobileNumber: {
     fontSize: 20,
     marginLeft: 10, // Adds space between the icon and the text
-    
+    fontWeight: 'bold',
   },
   scrollViewMain: {
     flex: 1,
@@ -225,8 +225,8 @@ const styles = StyleSheet.create({
 
 
   scrollViewMain: {
-    backgroundColor: 'pink',
-    marginHorizontal: 0,
+    
+    marginHorizontal: 10,
   },
   statusBar: {
     height: '10%', // Takes up 10% of the container height
@@ -240,12 +240,16 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
   },
-  row: {
-    flex: 1, // Ensures row takes remaining space
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 10,
+row: {
+    backgroundColor: '#ffffff', // Light gray background
+    borderRadius: 10, // Rounded corners
+    height: 60, // Set the height
+    width: '100%', // Set the width, adjust as needed
+    padding: 10, // Optional padding for text spacing
+    justifyContent: 'center', // Center the content vertically
+    alignItems: 'center', // Center the content horizontally
+    alignSelf: 'center', // Center the row within its parent container
+    marginVertical: 10, // Optional margin for spacing
   },
   scrollView: {
     flex: 1,
