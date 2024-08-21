@@ -292,4 +292,28 @@ row: {
     paddingHorizontal: 13, // Adds space to the left and right of the children
     paddingBottom: 16,
   },
+  
+  tabContainer: {
+    flexDirection: 'row',
+    backgroundColor: '#ffffff', // Background color for the tab bar
+    borderRadius: 10,
+    overflow: 'hidden', // Ensures the corners are rounded
+    marginBottom: 16,
+  },
+  tab: {
+    flex: 1,
+    paddingVertical: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  activeTab: {
+    backgroundColor: '#ffffff', // Background color for the active tab
+    borderBottomWidth: 3, // Underline thickness
+    borderBottomColor: '#8A2BE2', // Underline color
+  },
+  tabText: {
+    color: '#8A2BE2', // Default text color
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 });
