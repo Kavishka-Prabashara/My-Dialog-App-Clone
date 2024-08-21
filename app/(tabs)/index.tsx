@@ -27,13 +27,15 @@ export default function HomeScreen() {
     
     <SafeAreaView style={styles.containerMain}>
         <View style={styles.header}>
-          <Image source={require('@/assets/images/callIcon.png')
-            
-          }
-          style={{width: 50, height: 50}} />
-        <Text style={styles.headerText}>0777******</Text>
-        <Text style={styles.headerText}>Connected</Text>
-      </View>
+    <View style={styles.headerContent}>
+      <Image 
+        source={require('@/assets/images/callIcon.png')} 
+        style={{ width: 50, height: 40 }} 
+        testID="callIconImage" // Replace `id` with `testID`
+      />
+      <Text style={styles.mobileNumber}>+1234567890</Text>
+    </View>
+  </View>
       <ScrollView style={styles.scrollViewMain}>
 
 
@@ -174,18 +176,43 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  containerMain: {
+    flex: 1,
+  },
   header: {
     height: 50,
     backgroundColor: '#f8f8f8',
     justifyContent: 'center',
-    alignItems: 'left',
+    alignItems: 'flex-start',
     borderBottomWidth: 1,
     borderBottomColor: '#ddd',
   },
-  headerText: {
-    fontSize: 20,
-    fontWeight: 'bold',
+  headerContent: {
+    flexDirection: 'row', // Places the items in a row
+    alignItems: 'center', // Vertically centers the items
   },
+  mobileNumber: {
+    fontSize: 16,
+    marginLeft: 10, // Adds space between the icon and the text
+  },
+  scrollViewMain: {
+    flex: 1,
+  },
+  callIconImage: {
+    width: 50,
+    height: 40,
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+    transform: [
+      { translateX: -25 },  // Half of the width to center horizontally
+      { translateY: -20 },  // Half of the height to center vertically
+    ],
+  },
+
+
+
+
   scrollViewMain: {
     backgroundColor: 'pink',
     marginHorizontal: 0,
