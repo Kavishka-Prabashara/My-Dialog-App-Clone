@@ -104,10 +104,19 @@ export default function HomeScreen() {
       {/* Tab Content */}
       <View style={styles.contentContainer}>
         {selectedTab === 'MONEY' && (
-          <ThemedText>Money: $100</ThemedText>
+           <View style={styles.tabInformationArea}>
+           <Text style={styles.tabInfoTextsimCategory}>Prepaid Balance</Text>
+           <Text style={styles.tabInfoText}>RS 100</Text>
+           <Text style={styles.tabInfoTextvalidDate}>Valid Until 30 Mar 2025</Text>
+         </View>
         )}
         {selectedTab === 'DATA' && (
-          <ThemedText>Data: 12345</ThemedText>
+           <View style={styles.tabInformationArea}>
+           <Text style={styles.tabInfoText}>Prepaid Balance
+            Rs. 100.00
+            Valid Until 30 Mar 2025</Text>
+         </View>
+
         )}
         {selectedTab === 'VOICE' && (
           <ThemedText>Voice: 300 minutes</ThemedText>
@@ -331,6 +340,25 @@ row: {
     color: '#808080', // Default text color
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  tabInformationArea: {
+    backgroundColor: '#890166', // Background color
+    height: 50, // Height of the area
+    width: '100%', // Full width of the parent container
+    borderRadius: 10, // Rounded corners
+    justifyContent: 'center', // Center content vertically
+    alignItems: 'center', // Center content horizontally
+  },
+  tabInfoText: {
+    color: '#ffffff', // Text color
+    fontSize: 22, // Font size
+    fontWeight: 'bold', // Font weight
+  },
+  tabInfoTextsimCategory :{
+    color: '#ffffff', // Text color
+  },
+  tabInfoTextvalidDate :{
+    color: '#ffffff', // Text color
   },
 });
 
