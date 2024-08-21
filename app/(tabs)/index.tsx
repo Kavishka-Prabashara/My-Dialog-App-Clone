@@ -343,27 +343,35 @@ row: {
     fontSize: 16,
     fontWeight: 'bold',
   },
-  tabInformationArea: {
+  moneyArea: {
+    height: 100, // Set height of the area
+    width: '100%', // Set width to be the same as its parent container's width
     backgroundColor: '#890166', // Background color
-    height: 50, // Height of the area
-    width: '100%', // Full width of the parent container
-    borderRadius: 10, // Rounded corners
-    justifyContent: 'center', // Center content vertically
-    alignItems: 'center', // Center content horizontally
-    
+    borderRadius: 16, // Rounded corners
+    justifyContent: 'flex-start', // Align content to the top
+    alignItems: 'flex-start', // Align content to the left
+    paddingLeft: 10, // Padding to add space from the left edge
+    paddingRight: 10, // Optional padding to ensure space on the right side
+  },
+  tabInformationArea: {
+    width: '100%', // Ensures the inner area takes full width
   },
   tabInfoText: {
     color: '#ffffff', // Text color
     fontSize: 22, // Font size
     fontWeight: 'bold', // Font weight
+    textAlign: 'left', // Ensure text is aligned to the left
+    marginBottom: 4, // Optional: space between lines of text
   },
-  tabInfoTextsimCategory :{
+  tabInfoTextsimCategory: {
     color: '#ffffff', // Text color
     fontSize: 16, // Font size
+    textAlign: 'left', // Ensure text is aligned to the left
   },
-  tabInfoTextvalidDate :{
+  tabInfoTextvalidDate: {
     color: '#ffffff', // Text color
     fontSize: 16, // Font size
+    textAlign: 'left', // Ensure text is aligned to the left
   },
 });
 
