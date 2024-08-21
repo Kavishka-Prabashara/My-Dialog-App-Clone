@@ -288,5 +288,7 @@ row: {
   containerMain: {
     flex: 1,
     paddingTop: StatusBar.currentHeight,
+    paddingHorizontal: 13, // Adds space to the left and right of the children
+    paddingBottom: 16,
   },
 });
