@@ -119,6 +119,8 @@ export default function HomeScreen() {
         </TouchableOpacity>
          </View>
       </View>
+    
+      
         )}
         {selectedTab === 'DATA' && (
            <View style={styles.tabInformationArea}>
@@ -206,10 +208,10 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   tabArea:{
-    backgroundColor:'#ffffff',
-    borderRadius :20
-  },
-  containerMain: {
+    backgroundColor:'#008000',
+    borderRadius :20,
+    height: 250  },
+    containerMain: {
     flex: 1,
   },
   header: {
@@ -309,7 +311,7 @@ row: {
     fontSize: 16,
   },
   contentContainer: {
-    padding: 20,
+    padding: 5,
     alignItems: 'center',
     fontSize: 20
   },
@@ -352,6 +354,10 @@ row: {
     fontWeight: 'bold',
   },
   moneyArea: {
+
+  },
+  
+  tabInformationArea: {
     height: 100, // Set height of the area
     width: '100%', // Set width to be the same as its parent container's width
     backgroundColor: '#890166', // Background color
@@ -360,10 +366,6 @@ row: {
     alignItems: 'flex-start', // Align content to the left
     paddingLeft: 10, // Padding to add space from the left edge
     paddingRight: 10, // Optional padding to ensure space on the right side
-  },
-  
-  tabInformationArea: {
-    width: '100%', // Ensures the inner area takes full width
   },
   tabInfoText: {
     color: '#ffffff', // Text color
@@ -383,9 +385,10 @@ row: {
     textAlign: 'left', // Ensure text is aligned to the left
   },
   btnArea: {
+
     flexDirection: 'row', // Align buttons side by side
     justifyContent: 'space-between', // Add space between the buttons
-    marginTop: 10, // Optional: Add space above the button area
+    marginBottom: 10, // Optional: Add space above the button area
   },
   
   transactionButton: {
