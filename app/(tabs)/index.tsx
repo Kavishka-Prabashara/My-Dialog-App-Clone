@@ -27,7 +27,7 @@ export default function HomeScreen() {
   const [selectedTab, setSelectedTab] = useState('Data');
   const [value, setValue] = useState(null);
 
-  const data = [
+   const data = [
     { label: 'Item 1', value: '1' },
     { label: 'Item 2', value: '2' },
     { label: 'Item 3', value: '3' },
@@ -474,6 +474,7 @@ row: {
   dropdown: {
     margin: 16,
     height: 50,
+    width: '100%',
     backgroundColor: 'white',
     borderRadius: 12,
     padding: 12,
