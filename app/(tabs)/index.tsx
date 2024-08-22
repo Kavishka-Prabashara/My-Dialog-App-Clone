@@ -173,31 +173,36 @@ export default function HomeScreen() {
         style={styles.dropdown}
         placeholderStyle={styles.placeholderStyle}
         selectedTextStyle={styles.selectedTextStyle}
-        inputSearchStyle={styles.inputSearchStyle}
-        iconStyle={styles.iconStyle}
         data={data}
-        search
         maxHeight={300}
         labelField="label"
         valueField="value"
-        placeholder="Select item"
-        searchPlaceholder="Search..."
+        placeholder="Quick Reload"
         value={value}
         onChange={item => {
           setValue(item.value);
         }}
-        renderLeftIcon={() => (
-          <AntDesign style={styles.icon} color="black" name="Safety" size={20} />
-        )}
+      
         renderItem={renderItem}
       />
     </View>
       <View style={styles.row} id='navBar'>
-        <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
-        </ThemedText>
+      <Dropdown
+        style={styles.dropdown}
+        placeholderStyle={styles.placeholderStyle}
+        selectedTextStyle={styles.selectedTextStyle}
+        data={data}
+        maxHeight={300}
+        labelField="label"
+        valueField="value"
+        placeholder="Recomend Data Package"
+        value={value}
+        onChange={item => {
+          setValue(item.value);
+        }}
+      
+        renderItem={renderItem}
+      />
       </View>
       <View style={styles.row} id='navBar'>
         <ThemedText>
@@ -480,7 +485,7 @@ row: {
     padding: 12,
     shadowColor: '#000',
     shadowOffset: {
-      width: 0,
+      width: 1,
       height: 1,
     },
     shadowOpacity: 0.2,
@@ -502,7 +507,8 @@ row: {
     fontSize: 16,
   },
   placeholderStyle: {
-    fontSize: 16,
+    fontSize: 20,
+    fontWeight: 'bold'
   },
   selectedTextStyle: {
     fontSize: 16,
