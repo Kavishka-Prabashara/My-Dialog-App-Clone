@@ -208,7 +208,7 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   tabArea:{
-    backgroundColor:'#008000',
+    backgroundColor:'#fff000',
     borderRadius :20,
     height: 250  },
     containerMain: {
@@ -293,12 +293,7 @@ row: {
     marginRight: 10, // Space between images
     resizeMode: 'cover',
   },
-  tabContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    paddingVertical: 10,
-    backgroundColor: '#ddd',
-  },
+
   tab: {
     paddingVertical: 10,
     paddingHorizontal: 20,
@@ -311,7 +306,7 @@ row: {
     fontSize: 16,
   },
   contentContainer: {
-    padding: 5,
+    padding: 0,
     alignItems: 'center',
     fontSize: 20
   },
@@ -354,7 +349,10 @@ row: {
     fontWeight: 'bold',
   },
   moneyArea: {
-
+    width: '90%',  // Takes 80% of the parent width
+    margin: '0 auto',  // Centers the moneyArea horizontally
+    marginTop: '20px',  // Adds a 20px margin to the top
+    marginBottom: '20px',  // Adds a 20px margin to the bottom
   },
   
   tabInformationArea: {
