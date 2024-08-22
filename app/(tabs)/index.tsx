@@ -153,18 +153,45 @@ export default function HomeScreen() {
       
         )}
         {selectedTab === 'DATA' && (
-           <View style={styles.tabInformationArea}>
-           <Text style={styles.tabInfoText}>Prepaid Balance
-            Rs. 100.00
-            Valid Until 30 Mar 2025</Text>
-         </View>
+          <View style={styles.moneyArea}>
+          <View style={styles.tabInformationArea}>
+          <Text style={styles.tabInfoTextsimCategory}>Fun Blaster</Text>
+          <Text style={styles.tabInfoText}>Unlimited</Text>
+        </View>
+        <View style={styles.btnArea}>
+        <TouchableOpacity style={styles.transactionButton}>
+         <Text style={styles.transactionButtonText}>TRANSACTION</Text>
+       </TouchableOpacity>
+       <TouchableOpacity style={styles.reloadButton}>
+         <Text style={styles.reloadButtonText}>RELOAD</Text>
+       </TouchableOpacity>
+        </View>
+     </View>
 
         )}
         {selectedTab === 'VOICE' && (
-          <ThemedText>Voice: 300 minutes</ThemedText>
+          <View>
+            <View style={styles.voiceArea}>
+                 <Image 
+                 source={require('@/assets/images/noData/noDataIcon.png')} 
+                 style={{ width: 110, height: 110 }} 
+                 testID="voicePic"
+               />
+               <ThemedText  style={styles.voiceText}>
+                Seems like you don't have free voice minutes
+               </ThemedText>
+               <TouchableOpacity style={styles.voiceUsageHistoryButton}>
+         <Text style={styles.voiceUsageHistoryButtonText}>USEAGE HISTORY</Text>
+       </TouchableOpacity>
+                </View>
+           </View>               
         )}
         {selectedTab === 'SMS' && (
-          <ThemedText>SMS: 50 messages</ThemedText>
+                     <View style={styles.tabInformationArea}>
+                     <Text style={styles.tabInfoText}>Prepaid Balance
+                      Rs. 100.00
+                      Valid Until 30 Mar 2025</Text>
+                   </View>
         )}
         </View>
       </View>
@@ -874,6 +901,36 @@ row: {
     elevation: 5,    
     marginBottom: 10,       
     marginRight: 10  
-  }
+  },
+   voiceArea: {
+    padding:0,
+    height:8,
+    flex: 1,                      // Takes up full height and width of the parent
+        // Center content vertically
+    alignItems: 'center',         // Center content horizontally
+      // Optional: background color
+  },
+  voiceText: {
+    fontSize: 18,                 // Example text styling
+    color: '#333',
+    fontWeight: 'bold', // Bold text
+  },
+  voiceUsageHistoryButton: {
+    height:40,
+    marginTop: 20, // Optional: space between lines of text
+    width:'60%' ,
+    borderRadius: 30, // Rounded corners
+    borderWidth: 1, // Border thickness
+    borderColor: '#808080', // Grey outline color
+    backgroundColor: '#ffffff', // White background
+    paddingVertical: 10, // Vertical padding for button
+    paddingHorizontal: 15, // Horizontal padding for button
+  },
+  voiceUsageHistoryButtonText: {
+    fontSize :17,
+    color: '#ff0000', // Red font color
+    fontWeight: 'bold', // Bold text
+    textAlign: 'center', // Center text within the button
+  },
 });
 
