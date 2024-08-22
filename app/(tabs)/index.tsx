@@ -208,7 +208,7 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   tabArea:{
-
+    backgroundColor: '#ffffff',
     borderRadius :20,
     height: 250  },
     containerMain: {
