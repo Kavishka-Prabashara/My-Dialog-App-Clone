@@ -432,24 +432,64 @@ export default function HomeScreen() {
           International services
         </ThemedText>
       </View>
-            <View  style={styles.row}>
-        <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
+            <View>
+            <View>
+      <View style={styles.gridCardContainer} id='navBar'>
+        <View style={styles.card}>
+            <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesComboDataIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboDataIcon.png"
+    />
+            <ThemedText style={styles.titleBar}>
+          Data packages
         </ThemedText>
+        </View>
+        <View style={styles.card}>
+        <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesComboIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboIcon.png"
+    />
+                <ThemedText style={styles.titleBar}>
+          Combo packages
+        </ThemedText>
+        </View>
+
+        </View>
+      
+      </View>
       </View>
       <View>
         <ThemedText style={styles.titleBar}>
           Location services
         </ThemedText>
       </View>
-      <View style={styles.row} id='navBar'>
-        <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
+      <View>
+      <View style={styles.gridCardContainer} id='navBar'>
+        <View style={styles.card}>
+            <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesComboDataIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboDataIcon.png"
+    />
+            <ThemedText style={styles.titleBar}>
+          Data packages
         </ThemedText>
+        </View>
+        <View style={styles.card}>
+        <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesComboIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboIcon.png"
+    />
+                <ThemedText style={styles.titleBar}>
+          Combo packages
+        </ThemedText>
+        </View>
+
+        </View>
+      
       </View>
 
     </ScrollView>
