@@ -137,7 +137,7 @@ export default function HomeScreen() {
           <View style={styles.moneyArea}>
            <View style={styles.tabInformationArea}>
            <Text style={styles.tabInfoTextsimCategory}>Prepaid Balance</Text>
-           <Text style={styles.tabInfoText}>RS 100</Text>
+           <Text style={styles.tabInfoText}>Rs. 100</Text>
            <Text style={styles.tabInfoTextvalidDate}>Valid Until 30 Mar 2025</Text>
          </View>
          <View style={styles.btnArea}>
