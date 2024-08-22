@@ -187,11 +187,21 @@ export default function HomeScreen() {
            </View>               
         )}
         {selectedTab === 'SMS' && (
-                     <View style={styles.tabInformationArea}>
-                     <Text style={styles.tabInfoText}>Prepaid Balance
-                      Rs. 100.00
-                      Valid Until 30 Mar 2025</Text>
-                   </View>
+          <View>
+          <View style={styles.voiceArea}>
+               <Image 
+               source={require('@/assets/images/noData/noDataIcon.png')} 
+               style={{ width: 110, height: 110 }} 
+               testID="voicePic"
+             />
+             <ThemedText  style={styles.voiceText}>
+              Seems like you don't have free SMS
+             </ThemedText>
+             <TouchableOpacity style={styles.voiceUsageHistoryButton}>
+       <Text style={styles.voiceUsageHistoryButtonText}>USEAGE HISTORY</Text>
+     </TouchableOpacity>
+              </View>
+         </View>
         )}
         </View>
       </View>
