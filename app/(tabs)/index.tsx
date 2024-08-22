@@ -275,142 +275,142 @@ export default function HomeScreen() {
         <View style={styles.gridCardContainer} id='navBar'>
         <View style={styles.card}>
             <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesComboDataIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceShareCredit.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboDataIcon.png"
     />
             <ThemedText style={styles.titleBar}>
-          Data packages
+          Share credit
         </ThemedText>
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesComboIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceShareCredit.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Combo packages
+          Upgrade to postpaid
         </ThemedText>
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceAutoLoan.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Auto Loan
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceEzReloadWallet.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          eZ Reload wallet
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceScratchCard.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Scratch Card
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServicePayAsYouUse.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Pay As You Use
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceMyOffer.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          My Offer
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceMegaWasana.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Mega Wasana
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceESim.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          eSim
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceezCash.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          eZ Cash
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceReloadReserval.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Reload reversal
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceReconnect.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Reconnect
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceDisconnect.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Disconnect
         </ThemedText>                
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/otherServiceImg/otherServiceBlockSMS.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Block SMS
         </ThemedText>                
         </View>
         </View>
