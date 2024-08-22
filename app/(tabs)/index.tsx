@@ -481,7 +481,7 @@ export default function HomeScreen() {
       </View>
       <View>
         <ThemedText style={styles.titleBar}>
-          Streaming
+          International Service
         </ThemedText>
       </View>
             <View>
@@ -489,7 +489,7 @@ export default function HomeScreen() {
       <View style={styles.gridCardContainer} id='navBar'>
         <View style={styles.card}>
             <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesComboDataIcon.png')} 
+      source={require('@/assets/images/internationalService/voiceCall.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboDataIcon.png"
     />
@@ -499,7 +499,7 @@ export default function HomeScreen() {
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesComboIcon.png')} 
+      source={require('@/assets/images/internationalService/videoCall.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
@@ -514,14 +514,14 @@ export default function HomeScreen() {
       </View>
       <View>
         <ThemedText style={styles.titleBar}>
-          Other
+          Location Service
         </ThemedText>
       </View>
       <View>
       <View style={styles.gridCardContainer} id='navBar'>
         <View style={styles.card}>
             <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesComboDataIcon.png')} 
+      source={require('@/assets/images/locationService/networkCoverage.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboDataIcon.png"
     />
@@ -531,7 +531,7 @@ export default function HomeScreen() {
         </View>
         <View style={styles.card}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesComboIcon.png')} 
+      source={require('@/assets/images/locationService/location.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
