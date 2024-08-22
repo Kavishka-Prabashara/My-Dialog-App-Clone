@@ -204,19 +204,17 @@ export default function HomeScreen() {
         renderItem={renderItem}
       />
       </View>
-      <View style={styles.row} id='navBar'>
-        <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
-        </ThemedText>
+      <View style={styles.bannerRow}>
+      <Image 
+          source={require('@/assets/images/dialogNewConnectionBanner.png')}  
+          style={styles.dialogNewConnectionBanner} 
+        />
       </View>
-      <View style={styles.row} id='navBar'>
-        <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
-        </ThemedText>
+      <View style={styles.bannerRow}>
+      <Image 
+          source={require('@/assets/images/dialogRinginToneBanner.png')} 
+          style={styles.dialogRinginToneBanner} 
+        />
       </View>
             <View style={styles.row} id='navBar'>
         <ThemedText>
@@ -227,9 +225,10 @@ export default function HomeScreen() {
       </View>
       <View style={styles.row} id='navBar'>
         <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
+        <Image 
+          source={require('@/assets/images/callIcon.png')}  
+          style={styles.image} 
+        />
         </ThemedText>
       </View>
       <View style={styles.row} id='navBar'>
@@ -520,6 +519,25 @@ row: {
   inputSearchStyle: {
     height: 40,
     fontSize: 16,
+  },
+  dialogNewConnectionBanner: {
+    height: '100%', // Set the height
+    width: '100%',
+  },
+  dialogRinginToneBanner: {
+    height: '100%', // Set the height
+    width: '100%',
+  },
+  bannerRow: {
+    backgroundColor: '#ffffff', // Light gray background
+    borderRadius: 16, // Rounded corners
+    height: 130, // Set the height
+    width: '100%', // Set the width, adjust as needed
+    padding: 0, // Optional padding for text spacing
+    justifyContent: 'center', // Center the content vertically
+    alignItems: 'center', // Center the content horizontally
+    alignSelf: 'center', // Center the row within its parent container
+    marginVertical: 10,
   },
 });
 
