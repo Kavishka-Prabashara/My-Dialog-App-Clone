@@ -433,7 +433,7 @@ export default function HomeScreen() {
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Sports
         </ThemedText>                
         </View>
         <View style={styles.internationalSerCard}>
@@ -443,7 +443,7 @@ export default function HomeScreen() {
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          News
         </ThemedText>                
         </View>
         <View style={styles.internationalSerCard}>
@@ -453,7 +453,7 @@ export default function HomeScreen() {
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Lifestyle
         </ThemedText>                
         </View>
         <View style={styles.internationalSerCard}>
@@ -463,7 +463,7 @@ export default function HomeScreen() {
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Video & gaming
         </ThemedText>                
         </View>
         <View style={styles.internationalSerCard}>
@@ -473,7 +473,7 @@ export default function HomeScreen() {
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Voice add-on
+          Religious
         </ThemedText>                
         </View>
 
@@ -481,7 +481,7 @@ export default function HomeScreen() {
       </View>
       <View>
         <ThemedText style={styles.titleBar}>
-          International services
+          Streaming
         </ThemedText>
       </View>
             <View>
@@ -494,7 +494,7 @@ export default function HomeScreen() {
       testID="allPackagesComboDataIcon.png"
     />
             <ThemedText style={styles.titleBar}>
-          Data packages
+          Roaming
         </ThemedText>
         </View>
         <View style={styles.card}>
@@ -504,7 +504,7 @@ export default function HomeScreen() {
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Combo packages
+          IDD
         </ThemedText>
         </View>
 
@@ -514,7 +514,7 @@ export default function HomeScreen() {
       </View>
       <View>
         <ThemedText style={styles.titleBar}>
-          Location services
+          Other
         </ThemedText>
       </View>
       <View>
@@ -526,7 +526,7 @@ export default function HomeScreen() {
       testID="allPackagesComboDataIcon.png"
     />
             <ThemedText style={styles.titleBar}>
-          Data packages
+          Network coverage
         </ThemedText>
         </View>
         <View style={styles.card}>
@@ -536,7 +536,7 @@ export default function HomeScreen() {
       testID="allPackagesComboIcon.png"
     />
                 <ThemedText style={styles.titleBar}>
-          Combo packages
+          Locate us
         </ThemedText>
         </View>
 
