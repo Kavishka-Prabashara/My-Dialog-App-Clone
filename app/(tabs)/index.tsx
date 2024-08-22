@@ -231,7 +231,7 @@ export default function HomeScreen() {
           All Packages
         </ThemedText>
       </View>
-      <View style={styles.row} id='navBar'>
+      <View>
         <View style={styles.gridCardContainer} id='navBar'>
         <View style={styles.card}>
             <Image 
@@ -608,13 +608,15 @@ row: {
     marginTop: 10,       // Example margin top
     marginBottom: 10,    // Example margin bottom
   },
-  gridCardContainer :{
-
+  gridCardContainer: {
+    flexDirection: 'row',         // Row-wise layout
+    flexWrap: 'wrap',             // Wraps to the next row
+    justifyContent: 'space-around', // Space between items
   },
   card: {
-    width: 200,            // Example width
-    height: 150,           // Example height
-    backgroundColor: '#f0f0f0', // Example background color
+    width: '47%',            // Example width
+    height: 100,           // Example height
+    backgroundColor: '#ffffff', // Example background color
     justifyContent: 'center',   // Centers content vertically
     alignItems: 'center',       // Centers content horizontally
     borderRadius: 10,           // Optional: rounded corners
@@ -622,7 +624,8 @@ row: {
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-    elevation: 5,               // Optional: shadow for depth (Android)
+    elevation: 5,    
+    marginBottom: 10           // Optional: shadow for depth (Android)
   },
   cardText: {
     fontSize: 16,               // Example font size
