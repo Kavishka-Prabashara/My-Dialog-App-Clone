@@ -420,12 +420,64 @@ export default function HomeScreen() {
           Value added service
         </ThemedText>
       </View>
-      <View style={styles.row} id='navBar'>
-        <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
-        </ThemedText>
+      <View>
+      <ScrollView 
+        horizontal 
+        showsHorizontalScrollIndicator={false} 
+        style={styles.scrollView}
+      >
+        <View style={styles.internationalSerCard}>
+        <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboIcon.png"
+    />
+                <ThemedText style={styles.titleBar}>
+          Voice add-on
+        </ThemedText>                
+        </View>
+        <View style={styles.internationalSerCard}>
+        <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboIcon.png"
+    />
+                <ThemedText style={styles.titleBar}>
+          Voice add-on
+        </ThemedText>                
+        </View>
+        <View style={styles.internationalSerCard}>
+        <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboIcon.png"
+    />
+                <ThemedText style={styles.titleBar}>
+          Voice add-on
+        </ThemedText>                
+        </View>
+        <View style={styles.internationalSerCard}>
+        <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboIcon.png"
+    />
+                <ThemedText style={styles.titleBar}>
+          Voice add-on
+        </ThemedText>                
+        </View>
+        <View style={styles.internationalSerCard}>
+        <Image 
+      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      style={{ width: 50, height: 40 }} 
+      testID="allPackagesComboIcon.png"
+    />
+                <ThemedText style={styles.titleBar}>
+          Voice add-on
+        </ThemedText>                
+        </View>
+
+      </ScrollView>
       </View>
       <View>
         <ThemedText style={styles.titleBar}>
@@ -808,6 +860,20 @@ row: {
     fontSize: 16,               // Example font size
     color: '#333',              // Example text color
   },
-
+  internationalSerCard : {
+    width: 130,            // Example width
+    height: 100,           // Example height
+    backgroundColor: '#ffffff', // Example background color
+    justifyContent: 'center',   // Centers content vertically
+    alignItems: 'center',       // Centers content horizontally
+    borderRadius: 10,           // Optional: rounded corners
+    shadowColor: '#000',        // Optional: shadow for depth (iOS)
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,    
+    marginBottom: 10,       
+    marginRight: 10  
+  }
 });
 
