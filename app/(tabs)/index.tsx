@@ -428,7 +428,7 @@ export default function HomeScreen() {
       >
         <View style={styles.internationalSerCard}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/valueAddedService/batting.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
@@ -438,7 +438,7 @@ export default function HomeScreen() {
         </View>
         <View style={styles.internationalSerCard}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/valueAddedService/news.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
@@ -448,7 +448,7 @@ export default function HomeScreen() {
         </View>
         <View style={styles.internationalSerCard}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/valueAddedService/medi.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
@@ -458,7 +458,7 @@ export default function HomeScreen() {
         </View>
         <View style={styles.internationalSerCard}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/valueAddedService/gaming.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
@@ -468,7 +468,7 @@ export default function HomeScreen() {
         </View>
         <View style={styles.internationalSerCard}>
         <Image 
-      source={require('@/assets/images/allPackagesImg/allPackagesVoiceIcon.png')} 
+      source={require('@/assets/images/valueAddedService/pray.png')} 
       style={{ width: 50, height: 40 }} 
       testID="allPackagesComboIcon.png"
     />
