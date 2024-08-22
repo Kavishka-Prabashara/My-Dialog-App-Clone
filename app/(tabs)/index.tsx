@@ -208,7 +208,7 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   tabArea:{
-    backgroundColor:'#fff000',
+
     borderRadius :20,
     height: 250  },
     containerMain: {
@@ -352,7 +352,7 @@ row: {
     width: '90%',  // Takes 80% of the parent width
     margin: '0 auto',  // Centers the moneyArea horizontally
     marginTop: '20px',  // Adds a 20px margin to the top
-    marginBottom: '20px',  // Adds a 20px margin to the bottom
+    marginBottom: '30px',  // Adds a 20px margin to the bottom
   },
   
   tabInformationArea: {
@@ -390,6 +390,9 @@ row: {
   },
   
   transactionButton: {
+    height:40,
+    marginTop: 20, // Optional: space between lines of text
+    width:'48%' ,
     borderRadius: 30, // Rounded corners
     borderWidth: 1, // Border thickness
     borderColor: '#808080', // Grey outline color
@@ -399,6 +402,9 @@ row: {
   },
   
   reloadButton: {
+    height:40,
+    marginTop: 20, // Optional: space between lines of text
+    width:'48%' ,
     borderRadius: 30, // Rounded corners
     backgroundColor: '#ff0000', // Red background
     paddingVertical: 10, // Vertical padding for button
@@ -406,12 +412,14 @@ row: {
   },
   
   transactionButtonText: {
+    fontSize :17,
     color: '#ff0000', // Red font color
     fontWeight: 'bold', // Bold text
     textAlign: 'center', // Center text within the button
   },
   
   reloadButtonText: {
+    fontSize :17,
     color: '#ffffff', // White font color
     fontWeight: 'bold', // Bold text
     textAlign: 'center', // Center text within the button
