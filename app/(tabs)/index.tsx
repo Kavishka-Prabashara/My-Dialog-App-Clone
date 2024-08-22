@@ -204,11 +204,21 @@ export default function HomeScreen() {
         renderItem={renderItem}
       />
       </View>
+      <View>
+        <ThemedText style={styles.titleBar}>
+          Get your new connection
+        </ThemedText>
+      </View>
       <View style={styles.bannerRow}>
       <Image 
           source={require('@/assets/images/dialogNewConnectionBanner.png')}  
           style={styles.dialogNewConnectionBanner} 
         />
+      </View>
+      <View>
+        <ThemedText style={styles.titleBar}>
+          RingIN Tones
+        </ThemedText>
       </View>
       <View style={styles.bannerRow}>
       <Image 
@@ -216,19 +226,9 @@ export default function HomeScreen() {
           style={styles.dialogRinginToneBanner} 
         />
       </View>
-            <View style={styles.row} id='navBar'>
-        <ThemedText>
-          07772899876
-          {'\n'}
-          Connected
-        </ThemedText>
-      </View>
-      <View style={styles.row} id='navBar'>
-        <ThemedText>
-        <Image 
-          source={require('@/assets/images/callIcon.png')}  
-          style={styles.image} 
-        />
+      <View>
+        <ThemedText style={styles.titleBar}>
+          All Packages
         </ThemedText>
       </View>
       <View style={styles.row} id='navBar'>
@@ -238,6 +238,12 @@ export default function HomeScreen() {
           Connected
         </ThemedText>
       </View>
+
+      <View>
+        <ThemedText style={styles.titleBar}>
+          Other services
+        </ThemedText>
+      </View>
       <View style={styles.row} id='navBar'>
         <ThemedText>
           07772899876
@@ -245,13 +251,43 @@ export default function HomeScreen() {
           Connected
         </ThemedText>
       </View>
-            <View style={styles.row} id='navBar'>
+      <View>
+        <ThemedText style={styles.titleBar}>
+          Value added service
+        </ThemedText>
+      </View>
+      <View style={styles.row} id='navBar'>
         <ThemedText>
           07772899876
           {'\n'}
           Connected
         </ThemedText>
       </View>
+      <View>
+        <ThemedText style={styles.titleBar}>
+          International services
+        </ThemedText>
+      </View>
+            <View  style={styles.row}>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+      <View>
+        <ThemedText style={styles.titleBar}>
+          Location services
+        </ThemedText>
+      </View>
+      <View style={styles.row} id='navBar'>
+        <ThemedText>
+          07772899876
+          {'\n'}
+          Connected
+        </ThemedText>
+      </View>
+
     </ScrollView>
     </SafeAreaView>
   );
@@ -538,6 +574,12 @@ row: {
     alignItems: 'center', // Center the content horizontally
     alignSelf: 'center', // Center the row within its parent container
     marginVertical: 10,
+  },
+  titleBar: {
+    fontSize: 20,        // Example font size
+    fontWeight: 'bold',  // Example font weight
+    marginTop: 10,       // Example margin top
+    marginBottom: 10,    // Example margin bottom
   },
 });
 
